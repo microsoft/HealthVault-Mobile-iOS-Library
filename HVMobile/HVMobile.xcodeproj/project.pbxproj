@@ -1,0 +1,897 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		6759FD3E134603D8002C8982 /* HealthVaultRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6759FD3D134603D8002C8982 /* HealthVaultRequest.m */; };
+		67A4601C134B23900005DEC5 /* HealthVaultService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBC25231345C746005D3B16 /* HealthVaultService.m */; };
+		67A46021134B23B00005DEC5 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B3CA69134A08CB00D9F840 /* Base64.m */; };
+		67A46022134B23B60005DEC5 /* DateTimeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCEC5DA134B12FD004EB929 /* DateTimeUtils.m */; };
+		67A46023134B23BE0005DEC5 /* WebResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E6D8271346012400D9ECC1 /* WebResponse.m */; };
+		67A46024134B23C30005DEC5 /* WebTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E6D8291346012400D9ECC1 /* WebTransport.m */; };
+		67A46025134B23C90005DEC5 /* XmlElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E6D8211346011300D9ECC1 /* XmlElement.m */; };
+		67A46026134B23CD0005DEC5 /* XmlTextReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E6D8231346011300D9ECC1 /* XmlTextReader.m */; };
+		67A46027134B23D10005DEC5 /* HealthVaultRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6759FD3D134603D8002C8982 /* HealthVaultRequest.m */; };
+		67A46028134B23D70005DEC5 /* MobilePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6C7FB11344749D00AA2151 /* MobilePlatform.m */; };
+		67A46029134B23E00005DEC5 /* HealthVaultRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBC263F1345EE0C005D3B16 /* HealthVaultRecord.m */; };
+		67A4602A134B23E30005DEC5 /* HealthVaultResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1173313487DC300F475D3 /* HealthVaultResponse.m */; };
+		67B3CA6A134A08CB00D9F840 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B3CA69134A08CB00D9F840 /* Base64.m */; };
+		8C1E03461344B70F00BC49BE /* MobilePlatformTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E03451344B70F00BC49BE /* MobilePlatformTest.m */; };
+		8C6387A0134F1F3D0024120B /* HealthVaultRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F812E3AD134F1C640051A8B7 /* HealthVaultRequestTest.m */; };
+		8C8EF6CC13464476000792DA /* MobilePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6C7FB11344749D00AA2151 /* MobilePlatform.m */; };
+		8C8EF6CD13464482000792DA /* XmlTextReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E6D8231346011300D9ECC1 /* XmlTextReader.m */; };
+		8C8EF6CE1346449F000792DA /* XmlElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E6D8211346011300D9ECC1 /* XmlElement.m */; };
+		8C8EF6CF134644AF000792DA /* WebTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E6D8291346012400D9ECC1 /* WebTransport.m */; };
+		8C8EF6D0134644B5000792DA /* WebResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E6D8271346012400D9ECC1 /* WebResponse.m */; };
+		8C947C2E134B35FD00EC09CA /* HealthVaultRecordTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C947C2D134B35FD00EC09CA /* HealthVaultRecordTest.m */; };
+		8C95B3E913533E3100FC0FEF /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C95B3E813533E3100FC0FEF /* Logger.m */; };
+		8C9978841361D00700CC9891 /* Weight.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E6CAE013534316003A40FA /* Weight.m */; };
+		8C9978881361D02300CC9891 /* WeightTrackerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B81B4134445CC00F36F4D /* WeightTrackerAppDelegate.m */; };
+		8C99789B1361D10800CC9891 /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F85FF2E3135D95AD0056DD7D /* IntroViewController.m */; };
+		8C99789C1361D10800CC9891 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F85FF2E5135D95AD0056DD7D /* MainViewController.m */; };
+		8C99789D1361D10800CC9891 /* RecordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F85FF2E7135D95AD0056DD7D /* RecordsViewController.m */; };
+		8C99789E1361D10800CC9891 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F85FF2E9135D95AD0056DD7D /* WebViewController.m */; };
+		8C9978A21361D11E00CC9891 /* RecordImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F80A58C61357248500BBE7D3 /* RecordImage.m */; };
+		8C9978D11361D53900CC9891 /* WeightPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F80A5A091357417C00BBE7D3 /* WeightPickerView.m */; };
+		8C9B81B7134445CC00F36F4D /* WeightTrackerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B81B4134445CC00F36F4D /* WeightTrackerAppDelegate.m */; };
+		8CA1173413487DC300F475D3 /* HealthVaultResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1173313487DC300F475D3 /* HealthVaultResponse.m */; };
+		8CA40C651362B42200FB2BA6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		8CA40C6E1362B4A400FB2BA6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		8CA40C6F1362B4AA00FB2BA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		8CBC25241345C746005D3B16 /* HealthVaultService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBC25231345C746005D3B16 /* HealthVaultService.m */; };
+		8CBC255B1345DDB5005D3B16 /* HealthVaultServiceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBC255A1345DDB5005D3B16 /* HealthVaultServiceTest.m */; };
+		8CBC26401345EE0C005D3B16 /* HealthVaultRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBC263F1345EE0C005D3B16 /* HealthVaultRecord.m */; };
+		8CBEA11A1361A04000B9B079 /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CBEA1191361A04000B9B079 /* Readme.txt */; };
+		8CCEC5DB134B12FD004EB929 /* DateTimeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCEC5DA134B12FD004EB929 /* DateTimeUtils.m */; };
+		F80A58C71357248500BBE7D3 /* RecordImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F80A58C61357248500BBE7D3 /* RecordImage.m */; };
+		F80A5A0A1357417C00BBE7D3 /* WeightPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F80A5A091357417C00BBE7D3 /* WeightPickerView.m */; };
+		F80C7AC0137D6BDE0001F32E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F80C7ABF137D6BDE0001F32E /* Localizable.strings */; };
+		F812E3B3134F1C640051A8B7 /* HealthVaultResponseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F812E3AF134F1C640051A8B7 /* HealthVaultResponseTest.m */; };
+		F842AE31134DC305003F9774 /* HealthVaultSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = F842AE30134DC305003F9774 /* HealthVaultSettings.m */; };
+		F842AE32134DC305003F9774 /* HealthVaultSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = F842AE30134DC305003F9774 /* HealthVaultSettings.m */; };
+		F84D504413571CF6001D50B1 /* IntroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F84D503F13571CF6001D50B1 /* IntroView.xib */; };
+		F84D504613571CF6001D50B1 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F84D504113571CF6001D50B1 /* MainWindow.xib */; };
+		F84D504713571CF6001D50B1 /* RecordsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F84D504213571CF6001D50B1 /* RecordsView.xib */; };
+		F84D504813571CF6001D50B1 /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F84D504313571CF6001D50B1 /* WebView.xib */; };
+		F85A114B13571844005B437F /* HV_connects.png in Resources */ = {isa = PBXBuildFile; fileRef = F85A114A13571844005B437F /* HV_connects.png */; };
+		F85FF2EA135D95AD0056DD7D /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F85FF2E3135D95AD0056DD7D /* IntroViewController.m */; };
+		F85FF2EB135D95AD0056DD7D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F85FF2E5135D95AD0056DD7D /* MainViewController.m */; };
+		F85FF2EC135D95AD0056DD7D /* RecordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F85FF2E7135D95AD0056DD7D /* RecordsViewController.m */; };
+		F85FF2ED135D95AD0056DD7D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F85FF2E9135D95AD0056DD7D /* WebViewController.m */; };
+		F85FF386135DB6B90056DD7D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F85FF384135DB6B90056DD7D /* Icon.png */; };
+		F85FF387135DB6B90056DD7D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F85FF385135DB6B90056DD7D /* Icon@2x.png */; };
+		F886B2831358652A009061EC /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C95B3E813533E3100FC0FEF /* Logger.m */; };
+		F8DC1AD6134B39F20036972C /* Provisioner.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DC1AD5134B39F20036972C /* Provisioner.m */; };
+		F8DC1AE3134B3AA60036972C /* AuthenticationCheckState.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DC1AE2134B3AA60036972C /* AuthenticationCheckState.m */; };
+		F8DC1AF9134B3BEB0036972C /* Provisioner.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DC1AD5134B39F20036972C /* Provisioner.m */; };
+		F8DC1AFC134B3BF90036972C /* AuthenticationCheckState.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DC1AE2134B3AA60036972C /* AuthenticationCheckState.m */; };
+		F8E3E01D13607E8700C7318F /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8E3E01C13607E8700C7318F /* MainView.xib */; };
+		F8E5ACC613532DC70002254D /* ProvisionerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E5ACC513532DC70002254D /* ProvisionerTest.m */; };
+		F8E6CAE113534316003A40FA /* Weight.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E6CAE013534316003A40FA /* Weight.m */; };
+		F8F447D21355B3BB00A9CA0F /* delete_button.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F447D11355B3BB00A9CA0F /* delete_button.png */; };
+		F8F447F21355B63100A9CA0F /* green_button.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F447F11355B63100A9CA0F /* green_button.png */; };
+		F8F447F81355B6C300A9CA0F /* gray_button.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F447F71355B6C300A9CA0F /* gray_button.png */; };
+		F8F449611355D2C900A9CA0F /* border.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F449601355D2C900A9CA0F /* border.png */; };
+		F8F449851355D3F900A9CA0F /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F449841355D3F900A9CA0F /* bg.png */; };
+		F8F449DB1355D91400A9CA0F /* record_image_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F449DA1355D91400A9CA0F /* record_image_shadow.png */; };
+		F8F44A9E1355EE4700A9CA0F /* blue_button.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F44A9D1355EE4700A9CA0F /* blue_button.png */; };
+		F8F977B3135F3B27006A5B9C /* WeightTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F977B2135F3B27006A5B9C /* WeightTest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* WeightTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* HVMobile_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVMobile_Prefix.pch; sourceTree = "<group>"; };
+		6759FD3C134603D8002C8982 /* HealthVaultRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthVaultRequest.h; sourceTree = "<group>"; };
+		6759FD3D134603D8002C8982 /* HealthVaultRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthVaultRequest.m; sourceTree = "<group>"; };
+		67B3CA68134A08CB00D9F840 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		67B3CA69134A08CB00D9F840 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		8C1E03351344B47B00BC49BE /* Test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C1E03361344B47B00BC49BE /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
+		8C1E03441344B70F00BC49BE /* MobilePlatformTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobilePlatformTest.h; sourceTree = "<group>"; };
+		8C1E03451344B70F00BC49BE /* MobilePlatformTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobilePlatformTest.m; sourceTree = "<group>"; };
+		8C6C7FB01344749D00AA2151 /* MobilePlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobilePlatform.h; sourceTree = "<group>"; };
+		8C6C7FB11344749D00AA2151 /* MobilePlatform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobilePlatform.m; sourceTree = "<group>"; };
+		8C947C2C134B35FD00EC09CA /* HealthVaultRecordTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthVaultRecordTest.h; sourceTree = "<group>"; };
+		8C947C2D134B35FD00EC09CA /* HealthVaultRecordTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthVaultRecordTest.m; sourceTree = "<group>"; };
+		8C953B70134EF9DD000153BB /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		8C95B3E713533E3100FC0FEF /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		8C95B3E813533E3100FC0FEF /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		8C95B48F13534D0200FC0FEF /* HealthVaultConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthVaultConfig.h; sourceTree = "<group>"; };
+		8C9B81B3134445CC00F36F4D /* WeightTrackerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightTrackerAppDelegate.h; sourceTree = "<group>"; };
+		8C9B81B4134445CC00F36F4D /* WeightTrackerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightTrackerAppDelegate.m; sourceTree = "<group>"; };
+		8CA1173213487DC300F475D3 /* HealthVaultResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthVaultResponse.h; sourceTree = "<group>"; };
+		8CA1173313487DC300F475D3 /* HealthVaultResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthVaultResponse.m; sourceTree = "<group>"; };
+		8CBC25221345C746005D3B16 /* HealthVaultService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthVaultService.h; sourceTree = "<group>"; };
+		8CBC25231345C746005D3B16 /* HealthVaultService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthVaultService.m; sourceTree = "<group>"; };
+		8CBC25591345DDB5005D3B16 /* HealthVaultServiceTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthVaultServiceTest.h; sourceTree = "<group>"; };
+		8CBC255A1345DDB5005D3B16 /* HealthVaultServiceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthVaultServiceTest.m; sourceTree = "<group>"; };
+		8CBC263E1345EE0C005D3B16 /* HealthVaultRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthVaultRecord.h; sourceTree = "<group>"; };
+		8CBC263F1345EE0C005D3B16 /* HealthVaultRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthVaultRecord.m; sourceTree = "<group>"; };
+		8CBEA1191361A04000B9B079 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
+		8CCEC5D9134B12FD004EB929 /* DateTimeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimeUtils.h; sourceTree = "<group>"; };
+		8CCEC5DA134B12FD004EB929 /* DateTimeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimeUtils.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* WeightTracker-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WeightTracker-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		F80A58C51357248500BBE7D3 /* RecordImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecordImage.h; path = Entities/RecordImage.h; sourceTree = "<group>"; };
+		F80A58C61357248500BBE7D3 /* RecordImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecordImage.m; path = Entities/RecordImage.m; sourceTree = "<group>"; };
+		F80A5A081357417C00BBE7D3 /* WeightPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeightPickerView.h; path = Views/WeightPickerView.h; sourceTree = "<group>"; };
+		F80A5A091357417C00BBE7D3 /* WeightPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeightPickerView.m; path = Views/WeightPickerView.m; sourceTree = "<group>"; };
+		F80C7ABD137D6BDA0001F32E /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = Classes/HVMobile/English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F812E3AC134F1C640051A8B7 /* HealthVaultRequestTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthVaultRequestTest.h; sourceTree = "<group>"; };
+		F812E3AD134F1C640051A8B7 /* HealthVaultRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthVaultRequestTest.m; sourceTree = "<group>"; };
+		F812E3AE134F1C640051A8B7 /* HealthVaultResponseTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthVaultResponseTest.h; sourceTree = "<group>"; };
+		F812E3AF134F1C640051A8B7 /* HealthVaultResponseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthVaultResponseTest.m; sourceTree = "<group>"; };
+		F842AE2F134DC305003F9774 /* HealthVaultSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HealthVaultSettings.h; path = Settings/HealthVaultSettings.h; sourceTree = "<group>"; };
+		F842AE30134DC305003F9774 /* HealthVaultSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HealthVaultSettings.m; path = Settings/HealthVaultSettings.m; sourceTree = "<group>"; };
+		F84D503F13571CF6001D50B1 /* IntroView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = IntroView.xib; path = Resources/IntroView.xib; sourceTree = "<group>"; };
+		F84D504113571CF6001D50B1 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = Resources/MainWindow.xib; sourceTree = "<group>"; };
+		F84D504213571CF6001D50B1 /* RecordsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RecordsView.xib; path = Resources/RecordsView.xib; sourceTree = "<group>"; };
+		F84D504313571CF6001D50B1 /* WebView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WebView.xib; path = Resources/WebView.xib; sourceTree = "<group>"; };
+		F85A114A13571844005B437F /* HV_connects.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HV_connects.png; path = Classes/Sample/Resources/images/HV_connects.png; sourceTree = "<group>"; };
+		F85FF2E2135D95AD0056DD7D /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntroViewController.h; path = Controllers/IntroViewController.h; sourceTree = "<group>"; };
+		F85FF2E3135D95AD0056DD7D /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IntroViewController.m; path = Controllers/IntroViewController.m; sourceTree = "<group>"; };
+		F85FF2E4135D95AD0056DD7D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Controllers/MainViewController.h; sourceTree = "<group>"; };
+		F85FF2E5135D95AD0056DD7D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Controllers/MainViewController.m; sourceTree = "<group>"; };
+		F85FF2E6135D95AD0056DD7D /* RecordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecordsViewController.h; path = Controllers/RecordsViewController.h; sourceTree = "<group>"; };
+		F85FF2E7135D95AD0056DD7D /* RecordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecordsViewController.m; path = Controllers/RecordsViewController.m; sourceTree = "<group>"; };
+		F85FF2E8135D95AD0056DD7D /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = Controllers/WebViewController.h; sourceTree = "<group>"; };
+		F85FF2E9135D95AD0056DD7D /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewController.m; path = Controllers/WebViewController.m; sourceTree = "<group>"; };
+		F85FF384135DB6B90056DD7D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/icons/Icon.png; sourceTree = "<group>"; };
+		F85FF385135DB6B90056DD7D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resources/icons/Icon@2x.png"; sourceTree = "<group>"; };
+		F8DC1AD4134B39F20036972C /* Provisioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Provisioner.h; path = Provisioner/Provisioner.h; sourceTree = "<group>"; };
+		F8DC1AD5134B39F20036972C /* Provisioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Provisioner.m; path = Provisioner/Provisioner.m; sourceTree = "<group>"; };
+		F8DC1AE1134B3AA60036972C /* AuthenticationCheckState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AuthenticationCheckState.h; path = Provisioner/AuthenticationCheckState.h; sourceTree = "<group>"; };
+		F8DC1AE2134B3AA60036972C /* AuthenticationCheckState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuthenticationCheckState.m; path = Provisioner/AuthenticationCheckState.m; sourceTree = "<group>"; };
+		F8E3E01C13607E8700C7318F /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainView.xib; path = Resources/MainView.xib; sourceTree = "<group>"; };
+		F8E5ACC413532DC70002254D /* ProvisionerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvisionerTest.h; sourceTree = "<group>"; };
+		F8E5ACC513532DC70002254D /* ProvisionerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvisionerTest.m; sourceTree = "<group>"; };
+		F8E6CADF13534316003A40FA /* Weight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Weight.h; path = Entities/Weight.h; sourceTree = "<group>"; };
+		F8E6CAE013534316003A40FA /* Weight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Weight.m; path = Entities/Weight.m; sourceTree = "<group>"; };
+		F8E6D8201346011300D9ECC1 /* XmlElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XmlElement.h; path = Xml/XmlElement.h; sourceTree = "<group>"; };
+		F8E6D8211346011300D9ECC1 /* XmlElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XmlElement.m; path = Xml/XmlElement.m; sourceTree = "<group>"; };
+		F8E6D8221346011300D9ECC1 /* XmlTextReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XmlTextReader.h; path = Xml/XmlTextReader.h; sourceTree = "<group>"; };
+		F8E6D8231346011300D9ECC1 /* XmlTextReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XmlTextReader.m; path = Xml/XmlTextReader.m; sourceTree = "<group>"; };
+		F8E6D8261346012400D9ECC1 /* WebResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebResponse.h; path = WebTransport/WebResponse.h; sourceTree = "<group>"; };
+		F8E6D8271346012400D9ECC1 /* WebResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebResponse.m; path = WebTransport/WebResponse.m; sourceTree = "<group>"; };
+		F8E6D8281346012400D9ECC1 /* WebTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebTransport.h; path = WebTransport/WebTransport.h; sourceTree = "<group>"; };
+		F8E6D8291346012400D9ECC1 /* WebTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebTransport.m; path = WebTransport/WebTransport.m; sourceTree = "<group>"; };
+		F8F447D11355B3BB00A9CA0F /* delete_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = delete_button.png; path = Classes/Sample/Resources/images/delete_button.png; sourceTree = "<group>"; };
+		F8F447F11355B63100A9CA0F /* green_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = green_button.png; path = Classes/Sample/Resources/images/green_button.png; sourceTree = "<group>"; };
+		F8F447F71355B6C300A9CA0F /* gray_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gray_button.png; path = Classes/Sample/Resources/images/gray_button.png; sourceTree = "<group>"; };
+		F8F449601355D2C900A9CA0F /* border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = border.png; path = Classes/Sample/Resources/images/border.png; sourceTree = "<group>"; };
+		F8F449841355D3F900A9CA0F /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = Classes/Sample/Resources/images/bg.png; sourceTree = "<group>"; };
+		F8F449DA1355D91400A9CA0F /* record_image_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = record_image_shadow.png; path = Classes/Sample/Resources/images/record_image_shadow.png; sourceTree = "<group>"; };
+		F8F44A9D1355EE4700A9CA0F /* blue_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue_button.png; path = Classes/Sample/Resources/images/blue_button.png; sourceTree = "<group>"; };
+		F8F977B1135F3B27006A5B9C /* WeightTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightTest.h; sourceTree = "<group>"; };
+		F8F977B2135F3B27006A5B9C /* WeightTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightTest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C1E03321344B47B00BC49BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CA40C651362B42200FB2BA6 /* UIKit.framework in Frameworks */,
+				8CA40C6E1362B4A400FB2BA6 /* CoreGraphics.framework in Frameworks */,
+				8CA40C6F1362B4AA00FB2BA6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E03401344B69100BC49BE /* Tests */,
+				8C9B81AB1344450700F36F4D /* Sample */,
+				8C9B814113443F3800F36F4D /* HVMobile */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* WeightTracker.app */,
+				8C1E03351344B47B00BC49BE /* Test.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* HVMobile_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F80C7ABF137D6BDE0001F32E /* Localizable.strings */,
+				8C1E03361344B47B00BC49BE /* Test-Info.plist */,
+				8D1107310486CEB800E47090 /* WeightTracker-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67833D0513461A4F003069F7 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F842AE2F134DC305003F9774 /* HealthVaultSettings.h */,
+				F842AE30134DC305003F9774 /* HealthVaultSettings.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		67EBCE091349E466008F29F5 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				8C95B3E713533E3100FC0FEF /* Logger.h */,
+				8C95B3E813533E3100FC0FEF /* Logger.m */,
+				67B3CA68134A08CB00D9F840 /* Base64.h */,
+				67B3CA69134A08CB00D9F840 /* Base64.m */,
+				8CCEC5D9134B12FD004EB929 /* DateTimeUtils.h */,
+				8CCEC5DA134B12FD004EB929 /* DateTimeUtils.m */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		8C1E03401344B69100BC49BE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F812E3AC134F1C640051A8B7 /* HealthVaultRequestTest.h */,
+				F812E3AD134F1C640051A8B7 /* HealthVaultRequestTest.m */,
+				F812E3AE134F1C640051A8B7 /* HealthVaultResponseTest.h */,
+				F812E3AF134F1C640051A8B7 /* HealthVaultResponseTest.m */,
+				8C1E03441344B70F00BC49BE /* MobilePlatformTest.h */,
+				8C1E03451344B70F00BC49BE /* MobilePlatformTest.m */,
+				8CBC25591345DDB5005D3B16 /* HealthVaultServiceTest.h */,
+				8CBC255A1345DDB5005D3B16 /* HealthVaultServiceTest.m */,
+				8C947C2C134B35FD00EC09CA /* HealthVaultRecordTest.h */,
+				8C947C2D134B35FD00EC09CA /* HealthVaultRecordTest.m */,
+				F8E5ACC413532DC70002254D /* ProvisionerTest.h */,
+				F8E5ACC513532DC70002254D /* ProvisionerTest.m */,
+				F8F977B1135F3B27006A5B9C /* WeightTest.h */,
+				F8F977B2135F3B27006A5B9C /* WeightTest.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		8C9B814113443F3800F36F4D /* HVMobile */ = {
+			isa = PBXGroup;
+			children = (
+				F8DC191D134AF58C0036972C /* Provisioner */,
+				67EBCE091349E466008F29F5 /* Support */,
+				67833D0513461A4F003069F7 /* Settings */,
+				F8E6D81E134600FE00D9ECC1 /* WebTransport */,
+				F8E6D81F1346010500D9ECC1 /* Xml */,
+				6759FD3C134603D8002C8982 /* HealthVaultRequest.h */,
+				6759FD3D134603D8002C8982 /* HealthVaultRequest.m */,
+				8C6C7FB01344749D00AA2151 /* MobilePlatform.h */,
+				8C6C7FB11344749D00AA2151 /* MobilePlatform.m */,
+				8CBC25221345C746005D3B16 /* HealthVaultService.h */,
+				8CBC25231345C746005D3B16 /* HealthVaultService.m */,
+				8CBC263E1345EE0C005D3B16 /* HealthVaultRecord.h */,
+				8CBC263F1345EE0C005D3B16 /* HealthVaultRecord.m */,
+				8CA1173213487DC300F475D3 /* HealthVaultResponse.h */,
+				8CA1173313487DC300F475D3 /* HealthVaultResponse.m */,
+				8C95B48F13534D0200FC0FEF /* HealthVaultConfig.h */,
+			);
+			path = HVMobile;
+			sourceTree = "<group>";
+		};
+		8C9B81AB1344450700F36F4D /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				F80070DE1358661D00864CF0 /* Resources */,
+				F8006FCC1358556500864CF0 /* Controllers */,
+				F80A5A071357416000BBE7D3 /* Views */,
+				F8E6CADD135342F5003A40FA /* Entities */,
+				8C9B81B3134445CC00F36F4D /* WeightTrackerAppDelegate.h */,
+				8C9B81B4134445CC00F36F4D /* WeightTrackerAppDelegate.m */,
+				8C953B70134EF9DD000153BB /* Settings.h */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		F8006FCC1358556500864CF0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F85FF2E2135D95AD0056DD7D /* IntroViewController.h */,
+				F85FF2E3135D95AD0056DD7D /* IntroViewController.m */,
+				F85FF2E4135D95AD0056DD7D /* MainViewController.h */,
+				F85FF2E5135D95AD0056DD7D /* MainViewController.m */,
+				F85FF2E6135D95AD0056DD7D /* RecordsViewController.h */,
+				F85FF2E7135D95AD0056DD7D /* RecordsViewController.m */,
+				F85FF2E8135D95AD0056DD7D /* WebViewController.h */,
+				F85FF2E9135D95AD0056DD7D /* WebViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F80070DE1358661D00864CF0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F85FF383135DB6AA0056DD7D /* icons */,
+				F8FE350C13545377003B031B /* Images */,
+				F84D503F13571CF6001D50B1 /* IntroView.xib */,
+				F8E3E01C13607E8700C7318F /* MainView.xib */,
+				F84D504113571CF6001D50B1 /* MainWindow.xib */,
+				F84D504213571CF6001D50B1 /* RecordsView.xib */,
+				F84D504313571CF6001D50B1 /* WebView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F80A5A071357416000BBE7D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F80A5A081357417C00BBE7D3 /* WeightPickerView.h */,
+				F80A5A091357417C00BBE7D3 /* WeightPickerView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F85FF383135DB6AA0056DD7D /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				F85FF384135DB6B90056DD7D /* Icon.png */,
+				F85FF385135DB6B90056DD7D /* Icon@2x.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		F8DC191D134AF58C0036972C /* Provisioner */ = {
+			isa = PBXGroup;
+			children = (
+				F8DC1AE1134B3AA60036972C /* AuthenticationCheckState.h */,
+				F8DC1AE2134B3AA60036972C /* AuthenticationCheckState.m */,
+				F8DC1AD4134B39F20036972C /* Provisioner.h */,
+				F8DC1AD5134B39F20036972C /* Provisioner.m */,
+			);
+			name = Provisioner;
+			sourceTree = "<group>";
+		};
+		F8E6CADD135342F5003A40FA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F8E6CADF13534316003A40FA /* Weight.h */,
+				F8E6CAE013534316003A40FA /* Weight.m */,
+				F80A58C51357248500BBE7D3 /* RecordImage.h */,
+				F80A58C61357248500BBE7D3 /* RecordImage.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		F8E6D81E134600FE00D9ECC1 /* WebTransport */ = {
+			isa = PBXGroup;
+			children = (
+				F8E6D8261346012400D9ECC1 /* WebResponse.h */,
+				F8E6D8271346012400D9ECC1 /* WebResponse.m */,
+				F8E6D8281346012400D9ECC1 /* WebTransport.h */,
+				F8E6D8291346012400D9ECC1 /* WebTransport.m */,
+			);
+			name = WebTransport;
+			sourceTree = "<group>";
+		};
+		F8E6D81F1346010500D9ECC1 /* Xml */ = {
+			isa = PBXGroup;
+			children = (
+				F8E6D8201346011300D9ECC1 /* XmlElement.h */,
+				F8E6D8211346011300D9ECC1 /* XmlElement.m */,
+				F8E6D8221346011300D9ECC1 /* XmlTextReader.h */,
+				F8E6D8231346011300D9ECC1 /* XmlTextReader.m */,
+			);
+			name = Xml;
+			sourceTree = "<group>";
+		};
+		F8FE350C13545377003B031B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F85A114A13571844005B437F /* HV_connects.png */,
+				F8F44A9D1355EE4700A9CA0F /* blue_button.png */,
+				8CBEA1191361A04000B9B079 /* Readme.txt */,
+				F8F449DA1355D91400A9CA0F /* record_image_shadow.png */,
+				F8F449841355D3F900A9CA0F /* bg.png */,
+				F8F449601355D2C900A9CA0F /* border.png */,
+				F8F447F71355B6C300A9CA0F /* gray_button.png */,
+				F8F447F11355B63100A9CA0F /* green_button.png */,
+				F8F447D11355B3BB00A9CA0F /* delete_button.png */,
+			);
+			name = Images;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* HVMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "HVMobile" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HVMobile;
+			productName = HVMobile;
+			productReference = 1D6058910D05DD3D006BFB54 /* WeightTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C1E03341344B47B00BC49BE /* HVMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C1E03391344B47B00BC49BE /* Build configuration list for PBXNativeTarget "HVMobileTests" */;
+			buildPhases = (
+				8C1E03301344B47B00BC49BE /* Resources */,
+				8C1E03311344B47B00BC49BE /* Sources */,
+				8C1E03321344B47B00BC49BE /* Frameworks */,
+				8C1E03331344B47B00BC49BE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HVMobileTests;
+			productName = Test;
+			productReference = 8C1E03351344B47B00BC49BE /* Test.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Microsoft;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "HVMobile" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* HVMobile */,
+				8C1E03341344B47B00BC49BE /* HVMobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8F447D21355B3BB00A9CA0F /* delete_button.png in Resources */,
+				F8F447F21355B63100A9CA0F /* green_button.png in Resources */,
+				F8F447F81355B6C300A9CA0F /* gray_button.png in Resources */,
+				F8F449611355D2C900A9CA0F /* border.png in Resources */,
+				F8F449851355D3F900A9CA0F /* bg.png in Resources */,
+				F8F449DB1355D91400A9CA0F /* record_image_shadow.png in Resources */,
+				F8F44A9E1355EE4700A9CA0F /* blue_button.png in Resources */,
+				F85A114B13571844005B437F /* HV_connects.png in Resources */,
+				F84D504413571CF6001D50B1 /* IntroView.xib in Resources */,
+				F84D504613571CF6001D50B1 /* MainWindow.xib in Resources */,
+				F84D504713571CF6001D50B1 /* RecordsView.xib in Resources */,
+				F84D504813571CF6001D50B1 /* WebView.xib in Resources */,
+				F85FF386135DB6B90056DD7D /* Icon.png in Resources */,
+				F85FF387135DB6B90056DD7D /* Icon@2x.png in Resources */,
+				F8E3E01D13607E8700C7318F /* MainView.xib in Resources */,
+				8CBEA11A1361A04000B9B079 /* Readme.txt in Resources */,
+				F80C7AC0137D6BDE0001F32E /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C1E03301344B47B00BC49BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C1E03331344B47B00BC49BE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\" 1> /dev/null\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				8C9B81B7134445CC00F36F4D /* WeightTrackerAppDelegate.m in Sources */,
+				8CBC25241345C746005D3B16 /* HealthVaultService.m in Sources */,
+				8CBC26401345EE0C005D3B16 /* HealthVaultRecord.m in Sources */,
+				6759FD3E134603D8002C8982 /* HealthVaultRequest.m in Sources */,
+				8C8EF6CC13464476000792DA /* MobilePlatform.m in Sources */,
+				8C8EF6CD13464482000792DA /* XmlTextReader.m in Sources */,
+				8C8EF6CE1346449F000792DA /* XmlElement.m in Sources */,
+				8C8EF6CF134644AF000792DA /* WebTransport.m in Sources */,
+				8C8EF6D0134644B5000792DA /* WebResponse.m in Sources */,
+				8CA1173413487DC300F475D3 /* HealthVaultResponse.m in Sources */,
+				67B3CA6A134A08CB00D9F840 /* Base64.m in Sources */,
+				8CCEC5DB134B12FD004EB929 /* DateTimeUtils.m in Sources */,
+				F8DC1AD6134B39F20036972C /* Provisioner.m in Sources */,
+				F8DC1AE3134B3AA60036972C /* AuthenticationCheckState.m in Sources */,
+				F842AE32134DC305003F9774 /* HealthVaultSettings.m in Sources */,
+				8C95B3E913533E3100FC0FEF /* Logger.m in Sources */,
+				F8E6CAE113534316003A40FA /* Weight.m in Sources */,
+				F80A58C71357248500BBE7D3 /* RecordImage.m in Sources */,
+				F80A5A0A1357417C00BBE7D3 /* WeightPickerView.m in Sources */,
+				F85FF2EA135D95AD0056DD7D /* IntroViewController.m in Sources */,
+				F85FF2EB135D95AD0056DD7D /* MainViewController.m in Sources */,
+				F85FF2EC135D95AD0056DD7D /* RecordsViewController.m in Sources */,
+				F85FF2ED135D95AD0056DD7D /* WebViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C1E03311344B47B00BC49BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C1E03461344B70F00BC49BE /* MobilePlatformTest.m in Sources */,
+				8CBC255B1345DDB5005D3B16 /* HealthVaultServiceTest.m in Sources */,
+				67A4601C134B23900005DEC5 /* HealthVaultService.m in Sources */,
+				67A46021134B23B00005DEC5 /* Base64.m in Sources */,
+				67A46022134B23B60005DEC5 /* DateTimeUtils.m in Sources */,
+				67A46023134B23BE0005DEC5 /* WebResponse.m in Sources */,
+				67A46024134B23C30005DEC5 /* WebTransport.m in Sources */,
+				67A46025134B23C90005DEC5 /* XmlElement.m in Sources */,
+				67A46026134B23CD0005DEC5 /* XmlTextReader.m in Sources */,
+				67A46027134B23D10005DEC5 /* HealthVaultRequest.m in Sources */,
+				67A46028134B23D70005DEC5 /* MobilePlatform.m in Sources */,
+				67A46029134B23E00005DEC5 /* HealthVaultRecord.m in Sources */,
+				67A4602A134B23E30005DEC5 /* HealthVaultResponse.m in Sources */,
+				8C947C2E134B35FD00EC09CA /* HealthVaultRecordTest.m in Sources */,
+				F8DC1AF9134B3BEB0036972C /* Provisioner.m in Sources */,
+				F8DC1AFC134B3BF90036972C /* AuthenticationCheckState.m in Sources */,
+				F842AE31134DC305003F9774 /* HealthVaultSettings.m in Sources */,
+				F812E3B3134F1C640051A8B7 /* HealthVaultResponseTest.m in Sources */,
+				8C6387A0134F1F3D0024120B /* HealthVaultRequestTest.m in Sources */,
+				F8E5ACC613532DC70002254D /* ProvisionerTest.m in Sources */,
+				F886B2831358652A009061EC /* Logger.m in Sources */,
+				F8F977B3135F3B27006A5B9C /* WeightTest.m in Sources */,
+				8C9978841361D00700CC9891 /* Weight.m in Sources */,
+				8C9978881361D02300CC9891 /* WeightTrackerAppDelegate.m in Sources */,
+				8C99789B1361D10800CC9891 /* IntroViewController.m in Sources */,
+				8C99789C1361D10800CC9891 /* MainViewController.m in Sources */,
+				8C99789D1361D10800CC9891 /* RecordsViewController.m in Sources */,
+				8C99789E1361D10800CC9891 /* WebViewController.m in Sources */,
+				8C9978A21361D11E00CC9891 /* RecordImage.m in Sources */,
+				8C9978D11361D53900CC9891 /* WeightPickerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F80C7ABF137D6BDE0001F32E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F80C7ABD137D6BDA0001F32E /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HVMobile_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INFOPLIST_FILE = "WeightTracker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = WeightTracker;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HVMobile_Prefix.pch;
+				INFOPLIST_FILE = "WeightTracker-Info.plist";
+				PRODUCT_NAME = HVMobile;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C1E03371344B47B00BC49BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_VARIANTS = normal;
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "CONNECTION_ALLOW_ANY_HTTPS_CERTIFICATE=YES";
+				INFOPLIST_FILE = "Test-Info.plist";
+				INFOPLIST_PREPROCESSOR_DEFINITIONS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Test;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		8C1E03381344B47B00BC49BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "CONNECTION_ALLOW_ANY_HTTPS_CERTIFICATE=YES";
+				INFOPLIST_FILE = "Test-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Test;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "CONNECTION_ALLOW_ANY_HTTP_CERTIFICATE=YES";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		F85FF345135DA4220056DD7D /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Distribution;
+		};
+		F85FF346135DA4220056DD7D /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HVMobile_Prefix.pch;
+				INFOPLIST_FILE = "WeightTracker-Info.plist";
+				PRODUCT_NAME = WeightTracker;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		F85FF347135DA4220056DD7D /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "CONNECTION_ALLOW_ANY_HTTPS_CERTIFICATE=YES";
+				INFOPLIST_FILE = "Test-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Test;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "HVMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				F85FF346135DA4220056DD7D /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C1E03391344B47B00BC49BE /* Build configuration list for PBXNativeTarget "HVMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C1E03371344B47B00BC49BE /* Debug */,
+				8C1E03381344B47B00BC49BE /* Release */,
+				F85FF347135DA4220056DD7D /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "HVMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				F85FF345135DA4220056DD7D /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
