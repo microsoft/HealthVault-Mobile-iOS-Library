@@ -12,4 +12,4 @@ This release contains the following directories
 
 This source code is licensed under Apache 2.0.(http://www.apache.org/licenses/LICENSE-2.0.html)
 
-To get report bug or ask questions please use HealthVault forums at http://www.msdn.com/healthvault.
+To report a bug or ask a question please use HealthVault forums at http://www.msdn.com/healthvault.
