@@ -24,6 +24,8 @@
 + (NSString *)dateToUtcString: (NSDate *)date {
 
 	NSDateFormatter *formatter = [NSDateFormatter new];
+	NSLocale * enUSPOSIXLocale = [[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"] autorelease];
+    	[formatter setLocale:enUSPOSIXLocale];
 	[formatter setDateFormat: @"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"];
 	[formatter setTimeZone: [NSTimeZone timeZoneWithAbbreviation: @"UTC"]];
 	NSString *utcDateString = [formatter stringFromDate: date];
@@ -35,6 +37,8 @@
 + (NSDate *)UtcStringToDate: (NSString *)string {
 	
 	NSDateFormatter *formatter = [NSDateFormatter new];
+	NSLocale * enUSPOSIXLocale = [[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"] autorelease];
+    	[formatter setLocale:enUSPOSIXLocale];
 	[formatter setTimeZone: [NSTimeZone timeZoneWithAbbreviation: @"UTC"]];
 	
 	[formatter setDateFormat: @"yyyy-MM-dd'T'HH:mm:ss.SSS"];
