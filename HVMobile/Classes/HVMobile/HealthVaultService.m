@@ -327,7 +327,7 @@
 
 	NSData *keyData = [Base64 decodeBase64WithString: self.sharedSecret];
 	NSString *keyString = [[NSString alloc] initWithData: keyData
-												encoding: NSASCIIStringEncoding];
+												encoding: NSUTF8StringEncoding];
 	NSString *hmac = [MobilePlatform computeSha256Hmac: keyData
 													  : stringToSign];
 	[keyString release];

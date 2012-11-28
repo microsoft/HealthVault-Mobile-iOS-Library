@@ -37,7 +37,7 @@
 
 + (NSString *)computeSha256Hash: (NSString *)data {
 
-	const char *chars = [data cStringUsingEncoding: NSASCIIStringEncoding];
+	const char *chars = [data cStringUsingEncoding: NSUTF8StringEncoding];
 	NSData *keyData = [NSData dataWithBytes: chars length: strlen(chars)];
 
 	uint8_t digest[CC_SHA256_DIGEST_LENGTH] = {0};
