@@ -1,6 +1,11 @@
 HealthVault Mobile iOS Library
 -----------------------------
 
+*NOTE*
+HealthVault-Mobile-iOS-Library HAS BEEN DEPRECATED AND WILL BE REMOVED FROM GITHUB.
+
+PLEASE USE https://github.com/Microsoft/healthvault-ios-sdk
+
 Release date June 21 2011.
 
 This release contains the following directories
